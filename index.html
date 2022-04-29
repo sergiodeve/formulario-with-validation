@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+
+      <!--   <label for="Name1">Click me</label>
+        <input type="text" id="Name1" name="Name1" />
+        
+        <label for="Name2">Click me <input type="text" id="Name2" name="Name2" /></label>
+        <hr>
+        <span class="material-symbols-outlined true">
+            check_circle
+        </span>
+        <span class="material-symbols-outlined false">
+            check_circle
+        </span>
+
+ -->
+
+
+        <form action="#" id="form" class="form">
+
+          
+            <!-- Grupo: Correo Electronico -->
+			<div class="formulario__grupo" id="grupo__correo">
+				<label for="correo" class="form_label">Correo Electrónico</label>
+				<div class="formulario__grupo-input">
+					<input type="email" class="form_input" name="correo" id="correo" placeholder="correo@correo.com">
+					<span class="material-symbols-outlined icono">
+                        check_circle
+                    </span>
+				</div>
+				<p class="form_input-error" id="msg-error-correo">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+			</div>
+
+            	<!-- Grupo: Teléfono -->
+			<div class="formulario__grupo" id="grupo__telefono">
+				<label for="telefono" class="form_label">Teléfono</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="form_input" name="telefono" id="telefono" placeholder="4491234567">
+					<span class="material-symbols-outlined icono ">
+                        check_circle
+                    </span>
+				</div>
+				<p class="form_input-error" id="msg-error-telefono">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+			</div>
+			
+			<!-- Grupo: Contraseña -->
+			<div class="formulario__grupo" id="grupo__password">
+				<label for="password" class="form_label">Contraseña</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="form_input" name="password" id="password">
+					<span class="material-symbols-outlined icono ">
+                        check_circle
+                    </span>
+				</div>
+				<p class="form_input-error" id="msg-error-password">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+			</div>
+
+			<!-- Grupo: Contraseña 2 -->
+			<div class="formulario__grupo" id="grupo__password2">
+				<label for="password2" class="form_label">Repetir Contraseña</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="form_input" name="password2" id="password2">
+					<span class="material-symbols-outlined icono ">
+                        check_circle
+                    </span>
+				</div>
+				<p class="form_input-error" id="msg-error-password2">Ambas contraseñas deben ser iguales.</p>
+			</div>
+
+            <!-- Grupo: Terminos y Condiciones -->
+			<div class="form_grupo_terminos" id="grupo__terminos">
+				<label class="form_label" for="terminos">
+					<input class="form_checkbox" type="checkbox" name="terminos" id="terminos">
+					Acepto los Terminos y Condiciones
+				</label>
+			</div>
+
+			<div class="formulario__mensaje" id="formulario__mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Revisa los campos.</p>
+			</div>
+
+			<div class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn">Enviar</button>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado con exito!</p>
+			</div>
+
+        </form>
+
+     
+    </div>
+
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>
